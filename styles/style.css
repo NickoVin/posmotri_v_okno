@@ -80,8 +80,14 @@ ol {
 .search-form__label {
   display: flex;
   align-items: center;
+  padding: 2px;
   gap: 5px;
 }
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+
 .search-form__fieldset-title {
   margin-bottom: 5px;
   font-family: 'Fira Sans Condensed';
@@ -101,6 +107,10 @@ ol {
   border-bottom: 1px solid #fff;
   width: 100%;
   appearance: none;
+}
+
+.search-form__textfield:focus {
+  outline: none;
 }
 
 .visually-hidden {
