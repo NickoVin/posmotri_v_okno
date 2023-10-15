@@ -128,6 +128,12 @@ ol {
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
+  padding: 1px;
+  background-clip: content-box;
+}
+
+input[type='checkbox']:checked + span {
+  background-color: #fff;
 }
 
 .button {
